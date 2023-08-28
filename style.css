@@ -4,6 +4,7 @@ body {
     margin: 0;
 }
 
+/*Header*/
 nav {
     display: flex;
     border-bottom: 1px solid #ddd;
@@ -26,7 +27,8 @@ nav img {
 .navItems:hover {
     background-color: #ddd;
 }
-
+ 
+/*Carousel*/
 .slider {
     height: 50vw;
     max-height: 600px;
@@ -45,6 +47,7 @@ nav img {
     width: 100%;
     height: 100%;
     border-radius: 30px;
+    transition: ease-in-out 0.5s;
     
 }
 
@@ -71,6 +74,9 @@ nav img {
     font-size: larger;
     padding:5px 40px;
     border-radius: 0 5px 5px 0;
+}
+.slide a{
+    text-decoration: none;
 }
 
 .btn {
@@ -99,4 +105,55 @@ nav img {
   .btn-next {
     top: 50%;
     right: 2%;
+  }
+
+  /*Articles*/
+
+  .articleContainer{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+  }
+
+  .articleContainer article{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 100px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .articleContainer img{
+    width: 700px;
+    height: 450px;
+    border-radius: 30px;
+  }
+.articleContainer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between
+    ;
+}
+  .articleContainer h1{
+    font-family: 'Philosopher', sans-serif;
+    color: #A4193D;
+    font-size: x-large;
+  }
+  .articleContainer p{
+    font-family: 'Philosopher', sans-serif;
+    width: 80%;
+    font-size: large;
+  }
+  .articleContainer a{
+    background-color: #A4193D;
+    color: white;
+    text-decoration: none;
+    font-family:'Philosopher', sans-serif;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-top: 100px;
   }
