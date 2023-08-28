@@ -35,7 +35,7 @@ nav img {
     width: 70vw;
     max-width: 1000px;
     margin: 50px auto;
-    border-radius: 2.5%;
+    border-radius: 25px;
     overflow: hidden;
     position: relative;
 
@@ -93,8 +93,11 @@ nav img {
     z-index: 2;
   }
   
-  .btn:active {
+  .btn:hover {
     transform: scale(1.1);
+  }
+  .btn:active{
+    background-color: #ccc;
   }
   
   .btn-prev {
@@ -107,7 +110,7 @@ nav img {
     right: 2%;
   }
 
-  /*Articles*/
+  /*Article Container*/
 
   .articleContainer{
     width: 80%;
@@ -156,4 +159,41 @@ nav img {
     padding: 10px 25px;
     border-radius: 5px;
     margin-top: 100px;
+    transition: ease-in-out 0.25s;
   }
+.articleContainer a:hover{
+    transform: scale(1.1);
+    background-color: #8b1535;
+}
+
+/*Post Design*/
+
+.articlePosts{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    font-family: 'Philosopher', sans-serif;
+    text-align: center;
+}
+.articlePosts h1{
+    color: #A4193D;
+    font-size: xx-large;
+}
+.articlePosts h2{
+    color: #A4193D;
+}
+
+.articlePosts p{
+    width: 80%;
+    font-size: large;
+}
+.articlePosts img{
+    margin-top:50px;
+    width: 70vw;
+    height: 50vw;
+    max-height: 600px;
+    max-width: 1000px;
+    border-radius: 30px;
+}
