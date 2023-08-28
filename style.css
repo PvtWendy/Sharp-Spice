@@ -197,3 +197,60 @@ nav img {
     max-width: 1000px;
     border-radius: 30px;
 }
+/*Footer*/
+footer{
+  font-family: 'Philosopher', sans-serif;
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+  border-top: 1px solid #ccc;
+  justify-content: space-around;
+  padding-bottom: 100px;
+
+}
+footer section{
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  gap: 10px;
+}
+footer img{
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+footer h2{
+  color: #A4193D;
+}
+footer a{
+  text-decoration: none;
+  color: black;
+}
+
+/*Form*/
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: fit-content;
+  margin: 150px auto;
+  border: 1px solid #ccc;
+  padding: 100px 150px;
+  border-radius: 20px;
+  font-family: 'Philosopher', sans-serif;
+}
+
+form label{
+  color: #A4193D;
+}
+
+#button{
+  font-family: 'Philosopher', sans-serif;
+  color: white;
+  background-color: #A4193D;
+  border: 0;
+  padding: 10px 25px;
+  border-radius: 5px;
+}
