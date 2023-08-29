@@ -254,3 +254,8 @@ form label{
   padding: 10px 25px;
   border-radius: 5px;
 }
+
+#button:hover{
+  background-color: #8b1535;
+  cursor: pointer;
+}
