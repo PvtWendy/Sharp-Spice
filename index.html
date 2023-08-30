@@ -21,19 +21,19 @@
 
     <article class="slider">
         <section class="slide" style="transform: translateX(0%);">
-            <a href="posts/color-theory.html">
+            <a onclick="loadPost('color-theory')">
                 <img src="images/Kitchen.png" alt="Red Kitchen">
                 <p>Unlocking Flavor with Every Hue: Discover the Magic of Color Theory in Culinary Delights!</p>
             </a>
         </section>
         <section class="slide" style="transform: translateX(100%);">
-            <a href="posts/tomato-crostini.html">
+            <a onclick="loadPost('tomato-crostini')">
                 <img src="images/Crostini.png" alt="Red Kitchen">
                 <p>Tomato Crostini: A Bite of Pure Delight!</p>
             </a>
         </section>
         <section class="slide" style="transform: translateX(200%);">
-            <a href="posts/healthy-eating.html">
+            <a onclick="loadPost('healthy-eating')">
                 <img src="images/Nutrition.png" alt="Red Kitchen">
                 <p>Savoring Health: Unveiling the Easiest and Most Flavorful Path to Eating Well.
 
@@ -48,7 +48,7 @@
          </button>
     </article>
 
-    <section class="articleContainer">
+    <section class="articleContainer" id="postsContainer">
         <article id="color-theory">
             <img src="images/Kitchen.png" alt="">
             <div>
