@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sharp Spice</title>
-    <script src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -44,11 +44,12 @@
             >
         </button>
         <button class="btn btn-prev">
-            < </button>
+            <
+         </button>
     </article>
 
     <section class="articleContainer">
-        <article>
+        <article id="color-theory">
             <img src="images/Kitchen.png" alt="">
             <div>
                 <h1>Unlocking Flavor with Every Hue: Discover the Magic of Color Theory in Culinary Delights!</h1>
@@ -59,12 +60,12 @@
                     the art of food presentation and elevate your dining experience. Get ready to stimulate your senses
                     and revolutionize your cooking with the power of colors!
                 </p>
-                <a href="posts/color-theory.html">Read More</a>
+                <button onclick="loadPost('color-theory')">Read More</button>
             </div>
 
         </article>
 
-        <article>
+        <article id="tomato-crostini">
             <div>
                 <h1>Tomato Crostini: A Bite of Pure Delight!</h1>
                 <p>Get ready to tantalize your taste buds with our exquisite
@@ -75,13 +76,13 @@
                     sensational experience that will leave you craving more. Let's dive into the world of irresistible
                     flavors and simple elegance with our ultimate Tomato Crostini recipe!
                 </p>
-                <a href="posts/tomato-crostini.html">Read More</a>
+                <button onclick="loadPost('tomato-crostini')">Read More</button>
             </div>
 
             <img src="images/Crostini.png" alt="">
         </article>
 
-        <article>
+        <article id="healthy-eating">
             <img src="images/Nutrition.png" alt="">
             <div>
                 <h1>Savoring Health: Unveiling the Easiest and Most Flavorful Path to Eating Well</h1>
@@ -93,12 +94,12 @@
                     making every bite a celebration of well-being. Get ready to discover the easiest and tastiest way to
                     prioritize your health without sacrificing taste or enjoyment!
                 </p>
-                <a href="posts/healthy-eating.html">Read More</a>
+                <button onclick="loadPost('healthy-eating')">Read More</button>
             </div>
 
         </article>
 
-        <article>
+        <article id="presentation">
             <div>
                 <h1>The Art of Food Presentation: Making Every Dish a Visual Delight</h1>
                 <p>They say we eat with our eyes first, and nowhere is this adage more evident than in the world of
@@ -107,13 +108,13 @@
                     finest restaurants to home kitchens, the art of food presentation plays a pivotal role in
                     tantalizing our senses and enhancing our overall enjoyment of a meal.
                 </p>
-                <a href="posts/presentation.html">Read More</a>
+                <button onclick="loadPost('presentation')">Read More</button>
             </div>
 
             <img src="images/Presentation.png" alt="">
         </article>
 
-        <article>
+        <article id="airfryer">
             <img src="images/Airfryer.png" alt="">
             <div>
                 <h1>Mastering the Art of Cooking with Air Fryers: A Comprehensive Guide</h1>
@@ -124,7 +125,7 @@
                     basics of air fryer cooking and provide valuable tips to help you make the most out of this
                     versatile kitchen tool.
                 </p>
-                <a href="posts/airfryer.html">Read More</a>
+                <button onclick="loadPost('airfryer')">Read More</button>
             </div>
 
         </article>
