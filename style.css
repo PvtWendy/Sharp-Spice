@@ -1,239 +1,234 @@
-@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Philosopher&display=swap");
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 /*Header*/
 nav {
-    display: flex;
-    border-bottom: 1px solid #ddd;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav img {
-    width: 75px;
-    margin-left: 20px;
+  width: 75px;
+  margin-left: 20px;
 }
 
 .navItems {
-    font-family: 'Philosopher', sans-serif;
-    text-decoration: none;
-    padding: 32px 40px;
-    color: #A4193D;
+  font-family: "Philosopher", sans-serif;
+  text-decoration: none;
+  padding: 32px 40px;
+  color: #a4193d;
 }
 
 .navItems:hover {
-    background-color: #ddd;
+  background-color: #ddd;
 }
- 
+
 /*Carousel*/
 .slider {
-    height: 50vw;
-    max-height: 600px;
-    width: 70vw;
-    max-width: 1000px;
-    margin: 50px auto;
-    border-radius: 25px;
-    overflow: hidden;
-    position: relative;
-
+  height: 50vw;
+  max-height: 600px;
+  width: 70vw;
+  max-width: 1000px;
+  margin: 50px auto;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
 }
 
 .slide {
-    position: absolute;
-    background-color: #ccc;
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-    transition: ease-in-out 0.5s;
-    
+  position: absolute;
+  background-color: #ccc;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  transition: ease-in-out 0.5s;
 }
 
-.slide img{
-    position: relative;
-    object-fit:cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-    
+.slide img {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
 }
-.slide:first-of-type{
-    z-index: 1;
+.slide:first-of-type {
+  z-index: 1;
 }
 
-.slide p{
-    position: relative;
-    bottom: 150px;
-    background-color: white;
-    width: fit-content;
-    font-family: 'Philosopher', sans-serif;
-    text-decoration: none;
-    color: #A4193D;
-    font-size: larger;
-    padding:5px 40px;
-    border-radius: 0 5px 5px 0;
+.slide p {
+  position: relative;
+  bottom: 150px;
+  background-color: white;
+  width: fit-content;
+  font-family: "Philosopher", sans-serif;
+  text-decoration: none;
+  color: #a4193d;
+  font-size: larger;
+  padding: 5px 40px;
+  border-radius: 0 5px 5px 0;
 }
-.slide a{
-    text-decoration: none;
-    cursor: pointer;
+.slide a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .btn {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    border: none;
-    border-radius: 50%;
-    z-index: 10px;
-    cursor: pointer;
-    background-color: #fff;
-    font-size: 18px;
-    z-index: 2;
-  }
-  
-  .btn:hover {
-    transform: scale(1.1);
-  }
-  .btn:active{
-    background-color: #ccc;
-  }
-  
-  .btn-prev {
-    top: 50%;
-    left: 2%;
-  }
-  
-  .btn-next {
-    top: 50%;
-    right: 2%;
-  }
-
-  /*Article Container*/
-
-  .articleContainer{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 0 auto;
-  }
-
-  .articleContainer article{
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    padding: 100px 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    transition: 0.5s ease-in-out;
-  }
-  .articleContainer img{
-    width: 700px;
-    height: 450px;
-    border-radius: 30px;
-  }
-.articleContainer div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between
-    ;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 18px;
+  z-index: 2;
 }
-  .articleContainer h1{
-    font-family: 'Philosopher', sans-serif;
-    color: #A4193D;
-    font-size: x-large;
-  }
-  .articleContainer p{
-    font-family: 'Philosopher', sans-serif;
-    width: 80%;
-    font-size: large;
-  }
-  .articleContainer button{
-    background-color: #A4193D;
-    color: white;
-    text-decoration: none;
-    font-family:'Philosopher', sans-serif;
-    padding: 10px 25px;
-    border-radius: 5px;
-    margin-top: 100px;
-    transition: ease-in-out 0.25s;
-    border: 0;
-  }
-.articleContainer button:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-    background-color: #8b1535;
+
+.btn:hover {
+  transform: scale(1.1);
+}
+.btn:active {
+  background-color: #ccc;
+}
+
+.btn-prev {
+  top: 50%;
+  left: 2%;
+}
+
+.btn-next {
+  top: 50%;
+  right: 2%;
+}
+
+/*Article Container*/
+
+.articleContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.articleContainer article {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 100px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+.articleContainer img {
+  width: 700px;
+  height: 450px;
+  border-radius: 30px;
+}
+.articleContainer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.articleContainer h1 {
+  font-family: "Philosopher", sans-serif;
+  color: #a4193d;
+  font-size: x-large;
+}
+.articleContainer p {
+  font-family: "Philosopher", sans-serif;
+  width: 80%;
+  font-size: large;
+}
+.articleContainer button {
+  background-color: #a4193d;
+  color: white;
+  text-decoration: none;
+  font-family: "Philosopher", sans-serif;
+  padding: 10px 25px;
+  border-radius: 5px;
+  margin-top: 100px;
+  transition: ease-in-out 0.25s;
+  border: 0;
+}
+.articleContainer button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: #8b1535;
 }
 
 /*Post Design*/
 
-.articlePosts{
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    font-family: 'Philosopher', sans-serif;
-    text-align: center;
+.articlePosts {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  font-family: "Philosopher", sans-serif;
+  text-align: center;
 }
-.articlePosts h1{
-    color: #A4193D;
-    font-size: xx-large;
+.articlePosts h1 {
+  color: #a4193d;
+  font-size: xx-large;
 }
-.articlePosts h2{
-    color: #A4193D;
+.articlePosts h2 {
+  color: #a4193d;
 }
 
-.articlePosts p{
-    width: 80%;
-    font-size: large;
+.articlePosts p {
+  width: 80%;
+  font-size: large;
 }
-.articlePosts img{
-    width: 70vw;
-    height: 50vw;
-    max-height: 600px;
-    max-width: 1000px;
-    border-radius: 30px;
+.articlePosts img {
+  width: 70vw;
+  height: 50vw;
+  max-height: 600px;
+  max-width: 1000px;
+  border-radius: 30px;
 }
 /*Footer*/
-footer{
-  font-family: 'Philosopher', sans-serif;
+footer {
+  font-family: "Philosopher", sans-serif;
   display: flex;
   width: 100%;
   margin-top: 50px;
   border-top: 1px solid #ccc;
   justify-content: space-around;
   padding-bottom: 100px;
-
 }
-footer section{
+footer section {
   display: flex;
   flex-direction: column;
   width: 100px;
   gap: 10px;
 }
-footer img{
+footer img {
   margin-top: 10px;
   width: 100px;
   height: 100px;
 }
 
-footer h2{
-  color: #A4193D;
+footer h2 {
+  color: #a4193d;
 }
-footer a{
+footer a {
   text-decoration: none;
   color: black;
 }
 
 /*Form*/
 
-form{
+form {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -242,29 +237,29 @@ form{
   border: 1px solid #ccc;
   padding: 100px 150px;
   border-radius: 20px;
-  font-family: 'Philosopher', sans-serif;
+  font-family: "Philosopher", sans-serif;
 }
 
-form label{
-  color: #A4193D;
+form label {
+  color: #a4193d;
 }
 
-#button{
-  font-family: 'Philosopher', sans-serif;
+#button {
+  font-family: "Philosopher", sans-serif;
   color: white;
-  background-color: #A4193D;
+  background-color: #a4193d;
   border: 0;
   padding: 10px 25px;
   border-radius: 5px;
 }
 
-#button:hover{
+#button:hover {
   background-color: #8b1535;
   cursor: pointer;
 }
 
 /*JavaScript Animation*/
 
-.hide{
+.hide {
   opacity: 0;
 }
